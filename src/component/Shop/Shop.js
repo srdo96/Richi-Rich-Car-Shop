@@ -12,12 +12,15 @@ const Shop = () => {
 
   return (
     <div className="shop">
-      <div className="container">
-        {cars.map((car) => (
-          <Car key={car.id} car={car}></Car>
-        ))}
+      <div>
+        <h1 className="title">Selecte 4 Cars</h1>
+        <div className="container">
+          {cars.map((car) => (
+            <Car key={car.id} car={car}></Car>
+          ))}
+        </div>
       </div>
-      <div className="cart">
+      <div className="cart-container">
         <Cart></Cart>
       </div>
     </div>

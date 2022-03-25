@@ -4,7 +4,7 @@ import "./Header.css";
 const Header = () => {
   return (
     <nav className="header">
-      <h1>Richi Rich Car Shop</h1>
+      <h1>Richi Rich Car $hop</h1>
     </nav>
   );
 };
