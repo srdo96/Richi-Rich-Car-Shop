@@ -1,13 +1,21 @@
 import React, { useEffect, useState } from "react";
+import Car from "../Car/Car";
 
 const Shop = () => {
-  const [car, setCar] = useState([]);
+  const [cars, setCars] = useState([]);
   useEffect(() => {
     fetch("carDB.json")
       .then((res) => res.json())
-      .then((data) => console.log(data));
+      .then((data) => setCars(data));
   }, []);
-  return <div></div>;
+
+  return (
+    <div>
+      {cars.map((car) => (
+        <Car key={car.id} car={car}></Car>
+      ))}
+    </div>
+  );
 };
 
 export default Shop;
