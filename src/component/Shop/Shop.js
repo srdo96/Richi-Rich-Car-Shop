@@ -13,7 +13,7 @@ const Shop = () => {
   return (
     <div className="shop">
       <div>
-        <h1 className="title">Selecte 4 Cars</h1>
+        <h1 className="title">Select 4 Cars</h1>
         <div className="container">
           {cars.map((car) => (
             <Car key={car.id} car={car}></Car>
