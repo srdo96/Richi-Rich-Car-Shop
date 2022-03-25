@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Model S",
+    "price": 36990,
+    "img": "https://tesla-cdn.thron.com/delivery/public/image/tesla/56cb8c41-e898-44ce-b6b7-fe9b9a05f529/bvlatuR/std/1200x628/MS-Social"
+  },
+  {
+    "id": 2,
+    "name": "Cybertruck",
+    "price": 39900,
+    "img": "https://images.drive.com.au/caradvice/image/private/c_fill,f_auto,g_auto,h_674,q_auto:eco,w_1200/ubkvhv0xmvzof3wdeqan"
+  },
+  {
+    "id": 3,
+    "name": "Bugatti veyron",
+    "price": 720895,
+    "img": "https://www.naijaloaded.com.ng/wp-content/uploads/2019/07/bugatti.jpg"
+  },
+  {
+    "id": 4,
+    "name": "MERCEDES-CLASE-G-ELECTRICA",
+    "price": 399921,
+    "img": "https://www.elcarrocolombiano.com/wp-content/uploads/2019/11/20191110-MERCEDES-CLASE-G-ELECTRICA-AA01.jpg"
+  },
+  {
+    "id": 5,
+    "name": "812 GTS",
+    "price": 655808,
+    "img": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fcarconfigurator.ferrari.com%2F&psig=AOvVaw2b2mMpPrFLKOSsuRmTL-W5&ust=1648309344653000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCMDBv_HM4fYCFQAAAAAdAAAAABAD"
+  },
+  {
+    "id": 6,
+    "name": "Formula 1: Alfa Romeo",
+    "price": 5650347,
+    "img": "https://e0.365dm.com/22/02/768x432/skysports-alfa-romeo-f1-orlen-c42_5688281.jpg?20220227090051"
+  },
+  {
+    "id": 7,
+    "name": "911 Turbo S",
+    "price": 249965,
+    "img": "https://cdn.motor1.com/images/mgl/VmVwy/s1/porsche-911-turbo-s.jpg"
+  },
+  {
+    "id": 8,
+    "name": "BMW Z4",
+    "price": 401668,
+    "img": "https://images.carandbike.com/car-images/large/bmw/z4/bmw-z4.jpg?v=38"
+  },
+  {
+    "id": 9,
+    "name": "Range Rover SV",
+    "price": 557542,
+    "img": "https://thumbor.forbes.com/thumbor/fit-in/960x/filters:format(jpg)/https://www.forbes.com/wheels/wp-content/uploads/2021/10/2022_new_Range-_Rover-1.png"
+  },
+  {
+    "id": 10,
+    "name": "1930 Duesenberg Model J",
+    "price": 259132,
+    "img": "https://wallpaperaccess.com/full/258699.jpg"
+  }
+]
