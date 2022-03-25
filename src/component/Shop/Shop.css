@@ -1,6 +1,7 @@
 .shop {
   display: grid;
   grid-template-columns: 3fr 1fr;
+  padding-left: 100px;
 }
 .container {
   display: grid;
