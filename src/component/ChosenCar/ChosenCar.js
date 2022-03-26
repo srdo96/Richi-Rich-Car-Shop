@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./ChosenCar.css";
 const ChosenCar = ({ randomCar }) => {
   //   console.log(randomCar);
   const { img, name } = randomCar;

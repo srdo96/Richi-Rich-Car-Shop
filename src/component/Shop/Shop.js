@@ -7,32 +7,37 @@ const Shop = () => {
   const [cars, setCars] = useState([]);
   const [cart, setCart] = useState([]);
   const [randomCar, setRandomCar] = useState({});
+  const [message, setMessage] = useState("");
+
   useEffect(() => {
     fetch("carDB.json")
       .then((res) => res.json())
       .then((data) => setCars(data));
   }, []);
-  // console.log(cart);
+
   const handelAddToCart = (selectedCar) => {
     let newCart = [];
     const exist = cart.find((car) => car.id === selectedCar.id);
     if (!exist) {
       newCart = [...cart, selectedCar];
     }
-
-    // console.log(newCart);
     setCart(newCart);
   };
+
   const handelChoose = () => {
     const num = Math.floor(Math.random() * 4);
-    const randomCar = cart[num];
-    setRandomCar(randomCar);
-    console.log(cart[num]);
+    if (cart.length === 4) {
+      const randomCar = cart[num];
+      setRandomCar(randomCar);
+      setMessage("");
+    } else {
+      setMessage("You have to select 4 cars");
+    }
   };
 
   const handelChooseAgain = () => {
-    const emptyCart = [];
-    setCart(emptyCart);
+    // const emptyCart = [];
+    setCart([]);
     setRandomCar({});
   };
 
@@ -57,6 +62,7 @@ const Shop = () => {
           <p>Choose 1 For Me</p>
         </button>
         <br />
+        <p>{message}</p>
         <button onClick={handelChooseAgain} className="again-btn">
           <p>Choose Again</p>
         </button>
