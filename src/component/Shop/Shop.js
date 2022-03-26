@@ -25,18 +25,17 @@ const Shop = () => {
   };
 
   const handelChoose = () => {
-    const num = Math.floor(Math.random() * 4);
     if (cart.length === 4) {
+      const num = Math.floor(Math.random() * 4);
       const randomCar = cart[num];
       setRandomCar(randomCar);
+      console.log(randomCar);
       setMessage("");
     } else {
       setMessage("You have to select 4 cars");
     }
   };
-
   const handelChooseAgain = () => {
-    // const emptyCart = [];
     setCart([]);
     setRandomCar({});
   };
@@ -58,18 +57,15 @@ const Shop = () => {
             <Cart key={car.id} car={car}></Cart>
           ))}
         </div>
+        <p className="message">{message}</p>
         <button onClick={handelChoose} className="for-me-btn">
           <p>Choose 1 For Me</p>
         </button>
         <br />
-        <p>{message}</p>
         <button onClick={handelChooseAgain} className="again-btn">
           <p>Choose Again</p>
         </button>
-        {/* <div className="randomCar">
-          <img src={randomCar.img} alt="" />
-          <p>{randomCar.name}</p>
-        </div> */}
+
         <ChosenCar key={randomCar.id} randomCar={randomCar}></ChosenCar>
       </div>
     </div>

@@ -1,6 +1,6 @@
 .cart {
-  position: sticky;
-  top: 0;
+  /* position: sticky; */
+  /* top: 0; */
   padding-left: 20px;
 }
 .selected-car img {
