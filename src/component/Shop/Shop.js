@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Car from "../Car/Car";
 import Cart from "../Cart/Cart";
+import ChosenCar from "../ChosenCar/ChosenCar";
 import "./Shop.css";
 const Shop = () => {
   const [cars, setCars] = useState([]);
@@ -32,6 +33,7 @@ const Shop = () => {
   const handelChooseAgain = () => {
     const emptyCart = [];
     setCart(emptyCart);
+    setRandomCar({});
   };
 
   return (
@@ -58,10 +60,11 @@ const Shop = () => {
         <button onClick={handelChooseAgain} className="again-btn">
           <p>Choose Again</p>
         </button>
-        <div className="randomCar">
+        {/* <div className="randomCar">
           <img src={randomCar.img} alt="" />
           <p>{randomCar.name}</p>
-        </div>
+        </div> */}
+        <ChosenCar key={randomCar.id} randomCar={randomCar}></ChosenCar>
       </div>
     </div>
   );
