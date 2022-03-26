@@ -36,6 +36,11 @@
   border: none;
   border-radius: 5px;
 }
+.randomCar img {
+  width: 286px;
+  height: 186px;
+  border-radius: 10px;
+}
 
 @media screen and (max-width: 480px) {
   .shop {
