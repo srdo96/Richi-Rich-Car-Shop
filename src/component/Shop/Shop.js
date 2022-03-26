@@ -28,7 +28,11 @@ const Shop = () => {
     setRandomCar(randomCar);
     console.log(cart[num]);
   };
-  // console.log("This is Cart: ", cart);
+
+  const handelChooseAgain = () => {
+    const emptyCart = [];
+    setCart(emptyCart);
+  };
 
   return (
     <div className="shop">
@@ -47,11 +51,11 @@ const Shop = () => {
             <Cart key={car.id} car={car}></Cart>
           ))}
         </div>
-        <button onClick={() => handelChoose()} className="for-me-btn">
+        <button onClick={handelChoose} className="for-me-btn">
           <p>Choose 1 For Me</p>
         </button>
         <br />
-        <button className="again-btn">
+        <button onClick={handelChooseAgain} className="again-btn">
           <p>Choose Again</p>
         </button>
         <div className="randomCar">
