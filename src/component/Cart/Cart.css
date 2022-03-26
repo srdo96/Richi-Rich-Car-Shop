@@ -3,22 +3,9 @@
   top: 0;
   padding-left: 20px;
 }
-.for-me-btn {
-  background-color: #ff4584;
-  color: whitesmoke;
-  border: none;
-  border-radius: 5px;
-  margin-left: 10px;
-  margin-bottom: 5px;
-  padding: 1px 15px;
-  font-weight: bold;
-}
-.again-btn {
-  padding: 1px 15px;
-  font-weight: bold;
-  background-color: #00bbd8;
-  color: whitesmoke;
-  margin-left: 10px;
-  border: none;
-  border-radius: 5px;
+.selected-car img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
 }
